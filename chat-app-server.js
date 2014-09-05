@@ -42,7 +42,7 @@ webSocketServer.on('request', function (request) {
     });
 
     connection.on('message', function (message) {
-        console.log('Messaged recieved from ' + clientName + '.');
+        console.log('Messaged received from ' + clientName + '.');
 
         if (message.type === 'utf8') {
             var newMessage = {
